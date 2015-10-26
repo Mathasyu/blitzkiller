@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include <stdio.h> // Standard-Include
+#include <string.h> // Include der String-Funktionen
 
 // Aufgabenblatt prakt01.pdf
 // AUFGABE 2
