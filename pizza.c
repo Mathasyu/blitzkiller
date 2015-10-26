@@ -2,20 +2,37 @@
 #include <string.h> // Include der String-Funktionen
 
 // Aufgabenblatt prakt01.pdf
-// AUFGABE 2
-// Funktion Schaltjahr
+// AUFGABE 1
+// Funktion Tiefkühlpizza
 /*
 ALGORITHMUS 
-Schaltjahr()
+Tiefkühlpizza()
 
 BESCHREIBUNG
-Prüfe, ob es sich um ein Schaltjahr handelt.
+Zubereitung einer Tiefkühlpizza
 
-DATEN
-Das zu prüfende Jahr als GanzZahl: jahr
-Ausgabe der Meldung als String: ausgabe
+Deklaration der lokalen Daten und Größen
+Übernahmeparameter: --
+Rückgabeparameter : --
+Tiefkühlpizza, Blech, Teller ,Ofen, Kühlschrank
+
 
 KERN-ALGORITHMUS
+Hole Pizza aus Kühlschrank und mache sie auf ein Blech (Weise einer Variable eine Pizza aus dem Kühlschrank-Array zu)
+Ofen aufwärmen auf 200 ° (5 Minuten)
+Gebe die Pizza in den Ofen
+Hole die Pizza nach 8 Minuten aus dem Ofen
+Prüfe, ob die Pizza heiss genug register
+FALLS Pizza heiss genug
+    gebe die Pizza auf einen Teller
+SONST weiter aufwärmen
+    Zeitangabe, wie lange die Pizza noch drin bleiben soll
+ENDE FALLS
+
+Nehme die Pizza aus dem Ofen und lege sie auf einen Teller.
+
+
+/// Alten Algorithmus
 Einlesen von jahr
 FALLS   (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 einen Restwert hat) ODER
         (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 keinen Restwert hat UND jahr MODULO 400 keinen Restwert hat)
@@ -32,7 +49,7 @@ ENDE ALGORITHMUS
 
 */
 
-// Schaltjahr-Funktion
+// Schaltjahr-Funktion --> Pizza funktion draus machen
 int schaltjahr()
 {
  int jahr=0; // Daten: jahr als GanzZahl (int)
