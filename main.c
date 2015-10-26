@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// Aufgabenblatt prakt01.pdf
 // AUFGABE 2
 // Funktion Schaltjahr
 /*
@@ -34,12 +35,17 @@ ENDE ALGORITHMUS
 // Schaltjahr-Funktion
 int schaltjahr()
 {
- int jahr=0;
- char ausgabe[100] = "";
+ int jahr=0; // Daten: jahr als GanzZahl (int)
+ char ausgabe[100] = ""; // Daten: ausgabe als String (char)
   
  printf("Dieses Programm errechnet ob eine eingegebene Jahrezahl ein Schaltjahr ist:\n\n");
  printf("Gib die Jahreszahl vierstellig ein:");
+
+ /* Kern Algorithmus */
+ // "Einlesen von jahr"
  scanf("%d", &jahr);
+ // die FALLS SONST Kontrollstruktur (Bedingung)
+ // FALLS
   if (
       (jahr % 4 == 0 && jahr % 100 != 0) || 
       (jahr % 4 == 0 && jahr % 100 == 0 && jahr % 400 == 0)
@@ -47,9 +53,12 @@ int schaltjahr()
     {
         strcpy( ausgabe, "Es handelt sich um ein Schaltjahr" );
     }
+    // SONST
     else {
          strcpy( ausgabe, "Es handelt sich NICHT um ein Schaltjahr" );
+    // ENde der Bedingung
     }
+    // Ausgabe der Variable ausgabe
  printf("\n%s\n", ausgabe);
  return 0;
 } // end schaltjahr
