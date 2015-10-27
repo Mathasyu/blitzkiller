@@ -25,6 +25,23 @@ KERN-ALGORITHMUS
 Lese n von Benutzer ein
 Lese m von Benutzer ein
 
+FUNKTION prüfeJahr(jahr):
+
+    FALLS   (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 einen Restwert hat) ODER
+            (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 keinen Restwert hat UND jahr MODULO 400 keinen Restwert hat)
+    DANN
+        ausgabe = "jahr  | Ja";
+    SONST
+        ausgabe = "jahr  | Nein";
+    ENDE FALLS
+ENDE FUNKTION prüfeJahr()
+
+Ausgabe: "Jahr  |  Schaltjahr ?"
+Ausgabe: "---------------------"
+
+FÜR i = n BIS m SCHRITTWEITE 1
+    Rufe Funktion prüfeJahr mit Übergabeparameter n auf
+ENDE FÜR
 
 
 ENDE ALGORITHMUS
