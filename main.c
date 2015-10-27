@@ -14,41 +14,41 @@ Natürliche Zahlen:
 Die angegebene Backzeit: backzeit1 in Minuten
 Die weitere Backzeit: backzeit2 in Sekunden
 Temparatur des Ofens:  ofentemparatur
+verstricheneZeit (In Sekunden )
+Pizzastatus (Wahr/falsch) Boolean
 
 KERN-ALGORITHMUS
 Hole Pizza aus dem Kühlschrank
 Lege die Pizza auf ein Backblech
 // Herd auf 200° vorheizen (Ofenobjekt)
-Beginne Ofen aufheizen
+Ofen aufheizen
 WIEDERHOLE
     Prüfe Temparatur des Ofens
 SOLANGE (ofentemparatur >= 200)
 
 Pizza in den Ofen legen
-Einlesen der Garzeit
-
-
-WIEDERHOLE
-    Backe Pizza
-SOLANGE (Garzeit < angegebene Garzeit)
+Einlesen der Garzeit (backzeit1)
 
 WIEDERHOLE
-    Prüfe, ob die Pizza gut ist
-    Einlesen Pizzastatus
+    Backe Pizza (Ofen auf 200° halten)
+SOLANGE (verstricheneZeit < backzeit1)
+
+WIEDERHOLE
+    Einlesen Pizzastatus (Prüfe, ob die Pizza gut ist)
 
     FALLS (Pizzastatus == nicht OK)
     DANN
-        Einlesen der weiteren Backzeit
+        verstricheneZeit zurücksetzen
+        Einlesen der weiteren Backzeit (backzeit2)
 
         WIEDERHOLE
-            Backe Pizza
-        SOLANGE (Garzeit < weiteren Garzeit)
+            Backe Pizza (Ofen auf 200° halten)
+        SOLANGE (verstricheneZeit < backzeit2)
     ENDE FALLS
 SOLANGE (Pizzastatus == nicht OK)
 
-Pizza aus Ofen nehmen
-Pizza auf Teller legen
-
+Pizza aus dem Ofen nehmen
+Pizza auf den Teller legen
 
 ENDE ALGORITHMUS
 
