@@ -18,7 +18,7 @@ Temparatur des Ofens:  ofentemparatur
 KERN-ALGORITHMUS
 Hole Pizza aus dem Kühlschrank
 Lege die Pizza auf ein Backblech
-Herd auf 200° vorheizen (Ofenobjekt)
+// Herd auf 200° vorheizen (Ofenobjekt)
 Beginne Ofen aufheizen
 WIEDERHOLE
     Prüfe Temparatur des Ofens
