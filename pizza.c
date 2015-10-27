@@ -11,7 +11,7 @@ Schaltjahr()
 BESCHREIBUNG
 Prüfe, ob es sich um ein Schaltjahr handelt.
 
-DATEN
+DEKLARATION UND DEFINITION DER LOKALEN GRÖSSEN
 Das zu prüfende Jahr als GanzZahl: jahr
 Ausgabe der Meldung als String: ausgabe
 

@@ -9,10 +9,11 @@ Tiefkühlpizza()
 BESCHREIBUNG
 Bereite eine Tiefkühlpizza zu.
 
-DATEN
-Die angegebene Backzeit int backzeit1 in Minuten
-Die weitere Backzeit int backzeit2 in Sekunden
-Temparatur des Ofens int ofentemparatur
+DEKLARATION UND DEFINITION DER LOKALEN GRÖSSEN
+Natürliche Zahlen:
+Die angegebene Backzeit backzeit1 in Minuten
+Die weitere Backzeit backzeit2 in Sekunden
+Temparatur des Ofens  ofentemparatur
 
 KERN-ALGORITHMUS
 Herd auf 200° vorheizen (Ofenobjekt)
