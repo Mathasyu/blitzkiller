@@ -15,7 +15,8 @@ Die angegebene Backzeit: backzeit1 in Minuten
 Die weitere Backzeit: backzeit2 in Sekunden
 Temparatur des Ofens:  ofentemparatur
 verstricheneZeit (In Sekunden )
-Pizzastatus (Wahr/falsch) Boolean
+Boolesch:
+Pizzastatus (Wahr/falsch)
 
 KERN-ALGORITHMUS
 Hole Pizza aus dem Kühlschrank
