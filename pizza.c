@@ -10,6 +10,8 @@ BESCHREIBUNG
 Bereite eine Tiefkühlpizza zu.
 
 DEKLARATION UND DEFINITION DER LOKALEN GRÖSSEN
+Übergabeparameter: --
+Rückgabeparameter: --
 Natürliche Zahlen:
 Die angegebene Backzeit: backzeit1 in Minuten
 Die weitere Backzeit: backzeit2 in Sekunden
