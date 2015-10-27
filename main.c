@@ -17,14 +17,16 @@ Temparatur des Ofens:  ofentemparatur
 
 KERN-ALGORITHMUS
 Hole Pizza aus dem Kühlschrank
-Mache die Pizza auf ein Backblech
+Lege die Pizza auf ein Backblech
 Herd auf 200° vorheizen (Ofenobjekt)
-Prüfe Temparatur des Ofens
-FALLS (ofentemparatur >= 200)
-DANN
-    Pizza aus Folie nehmen und auf das Backblech legen
-    Einlesen der Garzeit
-ENDE FALLS
+Beginne Ofen aufheizen
+WIEDERHOLE
+    Prüfe Temparatur des Ofens
+SOLANGE (ofentemparatur >= 200)
+
+Pizza in den Ofen legen
+Einlesen der Garzeit
+
 
 WIEDERHOLE
     Backe Pizza
