@@ -31,7 +31,7 @@ Einlesen der Garzeit (backzeit1)
 
 WIEDERHOLE
     Backe Pizza (Ofen auf 200° halten)
-SOLANGE (verstricheneZeit < backzeit1)
+SOLANGE (verstricheneZeit <= backzeit1)
 
 WIEDERHOLE
     Einlesen Pizzastatus (Prüfe, ob die Pizza gut ist)
