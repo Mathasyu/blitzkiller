@@ -11,11 +11,13 @@ Bereite eine Tiefkühlpizza zu.
 
 DEKLARATION UND DEFINITION DER LOKALEN GRÖSSEN
 Natürliche Zahlen:
-Die angegebene Backzeit backzeit1 in Minuten
-Die weitere Backzeit backzeit2 in Sekunden
-Temparatur des Ofens  ofentemparatur
+Die angegebene Backzeit: backzeit1 in Minuten
+Die weitere Backzeit: backzeit2 in Sekunden
+Temparatur des Ofens:  ofentemparatur
 
 KERN-ALGORITHMUS
+Hole Pizza aus dem Kühlschrank
+Mache die Pizza auf ein Backblech
 Herd auf 200° vorheizen (Ofenobjekt)
 Prüfe Temparatur des Ofens
 FALLS (ofentemparatur >= 200)
@@ -44,7 +46,6 @@ SOLANGE (Pizzastatus == nicht OK)
 
 Pizza aus Ofen nehmen
 Pizza auf Teller legen
-Bon Appettit
 
 
 ENDE ALGORITHMUS
