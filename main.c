@@ -1,75 +1,57 @@
-#include <stdio.h> // Standard-Include
-#include <string.h> // Include der String-Funktionen
 
 // Aufgabenblatt prakt01.pdf
-// AUFGABE 2
-// Funktion Schaltjahr
+// AUFGABE 1
+// Funktion Tiefkühlpizza
 /*
 ALGORITHMUS 
-Schaltjahr()
+Tiefkühlpizza()
 
 BESCHREIBUNG
-Prüfe, ob es sich um ein Schaltjahr handelt.
+Bereite eine Tiefkühlpizza zu.
 
 DATEN
-Das zu prüfende Jahr als GanzZahl: jahr
-Ausgabe der Meldung als String: ausgabe
+Die angegebene Backzeit int backzeit1 in Minuten
+Die weitere Backzeit int backzeit2 in Sekunden
+Temparatur des Ofens int offentemparatur
 
 KERN-ALGORITHMUS
-Einlesen von jahr
-FALLS   (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 einen Restwert hat) ODER
-        (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 keinen Restwert hat UND jahr MODULO 400 keinen Restwert hat)
+Herd auf 200° vorheizen (Ofenobjekt)
+Prüfe Temparatur des Ofens
+FALLS Ofen vorgeheiztofentemparatur >= 200
 DANN
-    ausgabe = "Es handelt sich um ein Schaltjahr"
-SONST 
-    ausgabe = "Es handelt sich NICHT um ein Schaltjahr"
+Pizza aus Folie nehmen und auf das Backblech legen
+Einlesen der Garzeit
 ENDE FALLS
 
-Ausgabe der Meldung ausgabe
+WIEDERHOLE
+Backe Pizza
+SOLANGE
+Garzeit < angegebene Garzeit
+ENDE SOLANGE
+
+WIEDERHOLE
+    Prüfe, ob die Pizza gut ist
+    Einlesen Pizzastatus
+    FALLS Pizzastatus == nicht OK
+    DANN
+    Einlesen der weiteren Backzeit
+    ENDE FALLS
+    WIEDERHOLE
+    Backe Pizza
+    SOLANGE
+    Garzeit < weiteren Garzeit
+    ENDE SOLANGE
+SOLANGE
+Pizzastatus == nicht OK
+ENDE SOLANGE
+
+
+Pizza aus Ofen nehmen
+Pizza auf Teller legen
+Bon Appettit
+
 
 ENDE ALGORITHMUS
 
 
 */
-
-// Schaltjahr-Funktion
-int schaltjahr()
-{
- int jahr=0; // Daten: jahr als GanzZahl (int)
- char ausgabe[100] = ""; // Daten: ausgabe als String (char)
-  
- printf("Dieses Programm errechnet ob eine eingegebene Jahrezahl ein Schaltjahr ist:\n\n");
- printf("Gib die Jahreszahl vierstellig ein:");
-
- /* Kern Algorithmus */
- // "Einlesen von jahr"
- scanf("%d", &jahr);
- // die FALLS SONST Kontrollstruktur (Bedingung)
- // FALLS
-  if (
-      (jahr % 4 == 0 && jahr % 100 != 0) || 
-      (jahr % 4 == 0 && jahr % 100 == 0 && jahr % 400 == 0)
-      )
-    {
-        strcpy( ausgabe, "Es handelt sich um ein Schaltjahr" ); // Kopieren des Stringes "Es handelt sich..." in die Variable ausgabe
-    }
-    // SONST
-    else {
-         strcpy( ausgabe, "Es handelt sich NICHT um ein Schaltjahr" );  // da wir die Funktion strcpy (StringCopy) nutzen, müssen wir die
-                                                                        // Stringfunktionen inkludieren #include <string.h>
-    
-    }
-    // Ende FALLS
-    
-    // Ausgabe der Variable ausgabe
- printf("\n%s\n", ausgabe);
- return 0;
-} // end schaltjahr
-
-// HAUPTPROGRAMM
-int main()
-{
-    schaltjahr();
- return 0;
-}//end HAUPTPROGRAMM
-
