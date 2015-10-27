@@ -12,12 +12,12 @@ Bereite eine Tiefkühlpizza zu.
 DATEN
 Die angegebene Backzeit int backzeit1 in Minuten
 Die weitere Backzeit int backzeit2 in Sekunden
-Temparatur des Ofens int offentemparatur
+Temparatur des Ofens int ofentemparatur
 
 KERN-ALGORITHMUS
 Herd auf 200° vorheizen (Ofenobjekt)
 Prüfe Temparatur des Ofens
-FALLS Ofen vorgeheiztofentemparatur >= 200
+FALLS ofentemparatur >= 200
 DANN
 Pizza aus Folie nehmen und auf das Backblech legen
 Einlesen der Garzeit
@@ -35,12 +35,13 @@ WIEDERHOLE
     FALLS Pizzastatus == nicht OK
     DANN
     Einlesen der weiteren Backzeit
-    ENDE FALLS
+
     WIEDERHOLE
     Backe Pizza
     SOLANGE
     Garzeit < weiteren Garzeit
     ENDE SOLANGE
+    ENDE FALLS
 SOLANGE
 Pizzastatus == nicht OK
 ENDE SOLANGE
