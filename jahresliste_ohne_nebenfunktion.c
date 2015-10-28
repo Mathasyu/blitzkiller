@@ -34,6 +34,7 @@ Ausgabe: "Jahr  |  Schaltjahr ?" für den Tabellenkopf
 Ausgabe: "---------------------" für den Tabellenkopf
 
 FÜR i = n BIS m SCHRITTWEITE 1
+    jahr = i
     FALLS   (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 einen Restwert hat) ODER
             (jahr MODULO 4 keinen Restwert hat UND jahr MODULO 100 keinen Restwert hat UND jahr MODULO 400 keinen Restwert hat)
     DANN
