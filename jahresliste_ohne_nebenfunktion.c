@@ -15,13 +15,14 @@ Erstellung einer Liste aller Jahre zwischen zwei gegebenen Werten, die ausgibt, 
 DEKLARATION UND DEFINITION DER LOKALEN GRÖSSEN
 Übergabeparameter:
     --
+Rückgabeparameter:
+    ---
 Natürliche Zahlen:
     Anfangsjahr: n,
     Endjahr: m
     Zähler: i
     Jahr für die Fallunterscheidung und dieAusgabe: jahr
-Rückgabeparameter:
-    --
+
 String:
     ausgabe (Schaltjahr Ja/Nein)
 
