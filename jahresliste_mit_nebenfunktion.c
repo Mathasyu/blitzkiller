@@ -32,6 +32,7 @@ Rückgabe: jahr und ausgabe
 ENDE ALGORITHMUS
 
 
+
 ALGORITHMUS
 jahresliste()
 
@@ -49,8 +50,6 @@ Natürliche Zahlen:
 Natürliche Zahlen:
     Zähler: i
 
-
-
 KERN-ALGORITHMUS
 Ausgabe: Info "Dieses Programm gibt aus, ob es sich bei den Jahren zwischen dem angegebenen Anfangs- und Endjahr um ein Schaltjahr handelt:"
 Lese n von Benutzer ein
@@ -65,7 +64,6 @@ FÜR i = n BIS m SCHRITTWEITE 1
 ENDE FÜR
 
 ENDE ALGORITHMUS
-
 
 */
 
@@ -99,6 +97,7 @@ int schaltjahrBerechnen(jahr)
 
  return ---> ...und zurückgeben;
 } // end schaltjahrBerechnen
+
 
 // Jahresliste-Funktion
 int jahresliste()
