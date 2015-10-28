@@ -47,7 +47,6 @@ Rückgabeparameter:
 Natürliche Zahlen:
     Anfangsjahr: n,
     Endjahr: m
-Natürliche Zahlen:
     Zähler: i
 
 KERN-ALGORITHMUS
@@ -58,8 +57,8 @@ Ausgabe: "Jahr  |  Schaltjahr ?" für den Tabellenkopf
 Ausgabe: "---------------------" für den Tabellenkopf
 
 FÜR i = n BIS m SCHRITTWEITE 1
-    Setze jahr auf den momentanen Schritt
-    Rufe ALgorithmus schaltjahr() auf und Übergebe ihm das zu prüfende jahr
+    Setze jahr auf den momentanen Schritt i
+    Rufe ALgorithmus schaltjahr() auf und Übergebe ihm das zu prüfende Jahr jahr
     Ausgabe: Rückgabewert von schaltjahr()
 ENDE FÜR
 
