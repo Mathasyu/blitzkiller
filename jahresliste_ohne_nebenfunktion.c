@@ -21,7 +21,7 @@ Natürliche Zahlen:
     Anfangsjahr: n,
     Endjahr: m
     Zähler: i
-    Jahr für die Fallunterscheidung und dieAusgabe: jahr
+    Jahr für die Fallunterscheidung und die Ausgabe: jahr
 
 String:
     ausgabe (Schaltjahr Ja/Nein)
